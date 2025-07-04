@@ -1,19 +1,51 @@
 package main
 
-import "fmt"
+// func sayGreeting(n string) {
+// 	fmt.Printf("Good morning %v \n", n)
+// }
+// func sayBye(n string) {
+// 	fmt.Printf("Good Bye! %v \n", n)
+// }
 
-func sayGreeting(n string) {
-	fmt.Printf("Good morning %v \n", n)
-}
-func sayBye(n string) {
-	fmt.Printf("Good Bye! %v \n", n)
-}
+// func cycleNames(n []string, f func(string)) {
+// 	for _, v := range n {
+// 		f(v)
+// 	}
+// }
 
-func cycleNames(n []string, f func(string)) {
-	for _, v := range n {
-		f(v)
-	}
-}
+// func circleArea(r float64) float64 {
+// 	return math.Pi * r * r
+// }
+
+// func getInitials(n string) (string, string) {
+// 	s := strings.ToUpper(n)
+// 	names := strings.Split(s, " ")
+
+// 	var initials []string
+// 	for _, v := range names {
+// 		initials = append(initials, v[:1])
+// 	}
+
+// 	if len(initials) > 1 {
+// 		return initials[0], initials[1]
+// 	}
+// 	return initials[0], "_"
+// }
+
+// var score = 99.8
+
+// func updateName(x string) {
+// 	x = "yoshi"
+// }
+
+// func updateName(x string) string {
+// 	x = "wedge"
+// 	return x
+// }
+
+// func updateMenu(y map[string]float64) {
+// 	y["coffee"] = 2.99
+// }
 
 func main() {
 
@@ -161,9 +193,81 @@ func main() {
 	//
 	// sayGreeting("Sushant")
 	// sayBye("Sushant")
-	cycleNames([]string{"cloud", "tifa", "barret"}, sayGreeting)
-	cycleNames([]string{"cloud", "tifa", "barret"}, sayBye)
 
+	// cycleNames([]string{"cloud", "tifa", "barret"}, sayGreeting)
+	// cycleNames([]string{"cloud", "tifa", "barret"}, sayBye)
 
+	//
+	//
+	// a1 := circleArea(10.5)
+	// a2 := circleArea(15)
+
+	// fmt.Println(a1, a2)
+	// fmt.Printf("area of circle 1 is %0.3f and area of circle 2 is %0.3f", a1, a2)
+
+	// fn1, sn1 := getInitials("Sushant Khanal")
+	// fmt.Println(fn1, sn1)
+
+	// fn2, sn2 := getInitials("Trishan")
+	// fmt.Println(fn2, sn2)
+
+	// fn3, sn3 := getInitials("Prasiddha Raj Gautam")
+	// fmt.Println(fn3, sn3)
+
+	// sayHello("Sushant")
+
+	// for _, v := range points {
+	// 	fmt.Println(v)
+	// }
+
+	// showScore()
+
+	// menu := map[string]float64{
+	// 	"soup":  320,
+	// 	"Pie":   70,
+	// 	"salad": 120,
+	// }
+	// fmt.Println(menu)
+	// fmt.Println(menu["Pie"])
+
+	// //looping maps
+	// for k, v := range menu {
+
+	// 	fmt.Println(k, "-", v)
+	// }
+	// // ints as key type
+	// phonebook := map[int]string{
+	// 	1234: "Sushant",
+	// 	5678: "Trishan",
+	// 	1020: "samrat",
+	// }
+
+	// fmt.Println(phonebook)
+	// fmt.Println(phonebook[1234])
+
+	// phonebook[1020] = "Pandey"
+	// fmt.Println(phonebook)
+
+	// phonebook[1020] = "Goredai"
+	// fmt.Println(phonebook)
+
+	// group A types -> strings, ints, bools, floats, arrays, structs
+	// non-pointer wrapper values
+	// name := "tifa"
+
+	// // updateName(name)
+	// name = updateName(name)
+
+	// fmt.Println(name)
+
+	// // group B types -> slices, maps, functions
+	// // pointer wrapper values
+	// menu := map[string]float64{
+	// 	"pie":       5.95,
+	// 	"ice cream": 3.99,
+	// }
+
+	// updateMenu(menu)
+	// fmt.Println(menu)
 
 }
